@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+src/city_slickers/__init__.py
+src/city_slickers/request.py
+src/city_slickers.egg-info/PKG-INFO
+src/city_slickers.egg-info/SOURCES.txt
+src/city_slickers.egg-info/dependency_links.txt
+src/city_slickers.egg-info/not-zip-safe
+src/city_slickers.egg-info/requires.txt
+src/city_slickers.egg-info/top_level.txt

@@ -1,0 +1,31 @@
+exception calling callback for <Future at 0x18ddfd76dc8 state=finished raised BrokenProcessPool>
+joblib.externals.loky.process_executor._RemoteTraceback: 
+'''
+Traceback (most recent call last):
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 391, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\multiprocessing\queues.py", line 99, in get
+    if not self._rlock.acquire(block, timeout):
+KeyboardInterrupt
+'''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\site-packages\joblib\parallel.py", line 309, in __call__
+    self.parallel.dispatch_next()
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\site-packages\joblib\parallel.py", line 731, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\site-packages\joblib\parallel.py", line 759, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\site-packages\joblib\parallel.py", line 716, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\site-packages\joblib\_parallel_backends.py", line 510, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 151, in submit
+    fn, *args, **kwargs)
+  File "D:\Users\rwolff1\AppData\Local\Continuum\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 1022, in submit
+    raise self._flags.broken
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: city-slickers
+Version: 0.0.0
+Summary: Add a short description here!
+Home-page: https://github.com/pyscaffold/pyscaffold/
+Author: Wolff, Richard [JJCUS Non-J&J]
+Author-email: rwolff1@its.jnj.com
+License: mit
+Project-URL: Documentation, https://pyscaffold.org/
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Provides-Extra: testing
